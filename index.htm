@@ -8,21 +8,38 @@
 <body>
     <h1 id="titulo">Esse é o título</h1>
     <p id="texto">Esse aqui é o meu texto</p>
-    <button>Estilo 1</button>
-    <button>Estilo 2</button>
-   
+    <button type="button" onclick="mudar()">Estilo 1</button>
+    <button type="button" onclick="mudar2()">Estilo 2</button>
+    <button type="button" onclick="mudar3()">Estilo 3</button>
+    <button type="button" onclick="mudar4()">Estilo 4</button>
     <script>
-        document.write ("começando com <strong>js</strong>")
-        alert("Seja bem-vindo")
+        function mudar() {
+        
+            alert("Seja bem-vindo")
 
         let nome = prompt ("informe seu nome")
 
-        document.write(nome)
 
         alert("Seja bem vindo " + nome + " Espero que goste do site")
 
         document.body.style.backgroundColor = "red"
         document.getElementById("titulo").innerText = "Mudado com JS"
+        }
+
+        function mudar2() {
+            document.body.style.backgroundColor ="grey"
+            document.body.style.color ="purple"
+        }
+        function mudar3() {
+            document.body.style.backgroundColor= "black"
+            document.body.style.color= "white"
+        }
+
+        function mudar4() {
+            document.body.style.backgroundColor= "green"
+            document.body.style.color= "white"
+        }
     </script>
+    
 </body>
 </html>
